@@ -462,11 +462,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libsensorndkbridge
 
-PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.1-service.xiaomi_sunny-multihal
-
-PRODUCT_PACKAGES += \
-    sensors.xiaomi
+$(call inherit-product, vendor/hardware/xiaomi/hidl/sensors/sensors_product.mk)
 
 # Sensors configs
 PRODUCT_COPY_FILES += \
